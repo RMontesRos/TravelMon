@@ -5,5 +5,27 @@
   "login": "Iniciar sesión",
   "profile": "Mi perfil",
   "english": "Inglés",
-  "spanish": "Español"
+  "spanish": "Español",
+  "bucket-lists": "Listas de deseos",
+  "bucket-lists-text": "Guarda y comparte los destinos de tus sueños",
+  "description-home": "Si eres un trotamundos experimentado o simplemente estás planeando tu primer viaje, TravelMon tiene todo lo que necesitas para que tus viajes sean inolvidables. \nÚnete a esta gran comunidad de compañeros de viaje y comienza a explorar el mundo.",
+  "title-home": "TravelMon es una plataforma para entusiastas de los viajes",
+  "travel-guides": "Guías de viaje",
+  "travel-guides-text": "Explora el mundo con guías e itinerarios detallados.",
+  "travel-photos": "Fotos de viajes",
+  "travel-photos-text": "Comparte tus experiencias de viaje e inspira a otros",
+  "travel-stories": "Historias de viajes",
+  "travel-stories-text": "Cuente sus historias de viajes con hermosos diseños",
+  "travel-tips": "Consejos de viaje",
+  "travel-tips-text": "Recibe consejos prácticos para tu próximo viaje",
+  "travel-budget": "Control de gastos",
+  "travel": {
+    "budget-text": "Conoce el presupuesto de los viajes detalladamente"
+  },
+  "search": "Buscar",
+  "search-text": "Encuentra y comparte lugares increíbles, conoce a otros viajeros e inspírate para tu próximo viaje.",
+  "serach-title": "Descubre el mundo a través de TravelMon",
+  "cta-text": "Únase a TravelMon hoy y comience a compartir sus experiencias de viaje, descubrir nuevos destinos y conectarse con otros entusiastas de los viajes.",
+  "cta-title": "¿Listo para comenzar tu viaje?",
+  "you-signup": "¡Únete!"
 }

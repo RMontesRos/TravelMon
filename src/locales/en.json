@@ -5,5 +5,27 @@
   "profile": "My profile",
   "signup": "Sign up",
   "spanish": "Spanish",
-  "trips": "Trips"
+  "trips": "Trips",
+  "travel-guides": "Travel Guides",
+  "travel-guides-text": "Explore the world with detailed guides and itineraries",
+  "bucket-lists": "Bucket Lists",
+  "bucket-lists-text": "Save and share your dream destinations",
+  "travel-photos": "Travel Photos",
+  "travel-photos-text": "Share your travel experiences and inspire others",
+  "travel-stories": "Travel Stories",
+  "travel-stories-text": "Tell your travel stories with beautiful layouts",
+  "travel-tips": "Travel Tips",
+  "travel-tips-text": "Get practical advice for your next trip",
+  "title-home": "TravelMon is a platform for travel enthusiasts",
+  "description-home": "Whether you're an experienced globetrotter or just planning your first trip, TravelMon has everything you need to make your trips unforgettable. \nJoin this great community of fellow travelers and start exploring the world.",
+  "travel-budget": "Expense control",
+  "travel": {
+    "budget-text": "Know the travel budget in detail"
+  },
+  "serach-title": "Discover the world through TravelMon",
+  "search-text": "Find and share incredible places, meet fellow travelers, and get inspired for your next trip.",
+  "search": "Search",
+  "cta-title": "Ready to start your journey?",
+  "cta-text": "Join TravelMon today and start sharing your travel experiences, discovering new destinations, and connecting with other travel enthusiasts.",
+  "you-signup": "Join us"
 }

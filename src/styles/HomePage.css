@@ -88,11 +88,25 @@
 }
 
 .cta {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
     text-align: center;
-    padding: 20px;
+    padding: 0px 20px;
     background-color: #f0f0f0;
+    border: 1px solid #d4d4d4;
+    border-radius: 20px;
+    text-align: left;
 }
 
 .cta button {
     padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    height: fit-content;
+    align-self: center;
+    cursor: pointer;
 }

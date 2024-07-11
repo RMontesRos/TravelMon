@@ -30,7 +30,7 @@ function Features() {
             <div className="features-list">
                 {features.map((feature, index) => (
                     <div key={index} className="feature-item" onClick={() => handleFeatureClick(feature.title)}>
-                    <img src={feature.image} className="feature-image" />
+                    <img src={feature.image} alt={feature.title} className="feature-image" />
                         <p>{feature.title}</p>
                         <p className="feature-description">{feature.description}</p>
                     </div>

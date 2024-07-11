@@ -20,7 +20,7 @@ function SearchBar({ withImage }) {
                 </>
             }
             <div className="search-container">
-                <img src={SearchIcon} className="search-icon" />
+                <img src={SearchIcon} alt='' className="search-icon" />
                 <input className="search-input" type="text" placeholder={t('search')} />
                 <button className="search-button" onClick={handleSearch}>{t('search')}</button>
             </div>

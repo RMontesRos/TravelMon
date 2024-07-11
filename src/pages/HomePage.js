@@ -1,12 +1,16 @@
 // Home.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SearchBar from '../components/SearchBar';
+import Features from '../components/Features';
+import '../styles/HomePage.css';
 
 const Home = () => {
   const { t } = useTranslation();
   return (
     <div className='full-content'>
-      <h1>{t('welcome')}</h1>
+      <SearchBar withImage={true} />
+      <Features />
     </div>
   );
 };

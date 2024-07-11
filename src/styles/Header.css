@@ -75,12 +75,12 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    color: #333;
+    color: #000;
     white-space: nowrap;
 }
 
 .nav-links a {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .nav-links button {
@@ -89,21 +89,31 @@ header {
 
 .account-buttons {
     display: flex;
-    gap: 10px
+    gap: 10px;
 }
 
 .nav-links .btn-gray {
     background-color: #ccc;
     color: #333;
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-links .btn-gray:hover {
+    background-color: #aeaeae;
 }
 
 .nav-links .btn-blue {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-links .btn-blue:hover {
+    background-color: #696969;
 }
 
 .nav-icon {
@@ -139,4 +149,36 @@ header {
 
 .language-btn.active {
     font-weight: bold;
+}
+
+.profile-menu-trigger {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding: 15px 8px 8px 8px;
+    border-radius: 4px;
+}
+
+.nav-link.btn-logout {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 4px 8px;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.nav-link.btn-logout:hover {
+    background-color: #f2f2f2;
 }

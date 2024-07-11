@@ -1,15 +1,16 @@
 // CTA.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import SearchIcon from '../assets/icons/search.png';
+import { useNavigate } from 'react-router-dom';
 
 function CTA({ withImage }) {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
-    const handleSignUp = () => {
-        // Define sign up action here
-        console.log("Sign up button clicked");
-    };
+    const handleSignupClick = () => {
+        navigate('/signup');
+      };
+    
     
     return (
         <div className="cta">
@@ -17,7 +18,7 @@ function CTA({ withImage }) {
                 <h3>{t('cta-title')}</h3>
                 <p>{t('cta-text')}</p>
             </div>
-            <button onClick={handleSignUp}>{t('you-signup')}</button>
+            <button onClick={handleSignupClick}>{t('you-sign-up')}</button>
         </div>
     );
 }

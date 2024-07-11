@@ -1,0 +1,142 @@
+/* Header.css */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #B29BD1;
+    max-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    max-height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.travelmon {
+    text-transform: uppercase;
+}
+
+.travel,
+.mon {
+    font-size: 1.75em;
+}
+
+.travel {
+    color: #926EB8;
+}
+
+.mon {
+    color: #B29BD1;
+}
+
+.travel .initial,
+.mon .initial {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.travel .rest,
+.mon .rest {
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > * {
+    margin-right: 20px;
+}
+
+.nav-links a,
+.nav-links button {
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    white-space: nowrap;
+}
+
+.nav-links a {
+    font-size: 14px;
+}
+
+.nav-links button {
+    border-radius: 12px;
+}
+
+.account-buttons {
+    display: flex;
+    gap: 10px
+}
+
+.nav-links .btn-gray {
+    background-color: #ccc;
+    color: #333;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.nav-links .btn-blue {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.nav-icon {
+    cursor: pointer;
+}
+
+.language-selector {
+    position: relative;
+    height: 34px;
+}
+
+.language-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.language-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+}
+
+.language-btn.active {
+    font-weight: bold;
+}

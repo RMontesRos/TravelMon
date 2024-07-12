@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { auth, storage } from '../../firebaseConfig';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +7,7 @@ import { createTrip } from '../models/tripModel';
 
 const TripForm = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [knowsDates, setKnowsDates] = useState(false);
@@ -20,9 +22,15 @@ const TripForm = () => {
 
   const handleAddTrip = async (e) => {
     e.preventDefault();
+
+    if (!auth.currentUser) {
+      console.error('User is not authenticated');
+      return;
+    }
+
     let photoURL = '';
     if (photo) {
-      const storageRef = ref(storage, `trip_photos/${photo.name}`);
+      const storageRef = ref(storage, `trip_photos/${auth.currentUser.uid}_${photo.name}`);
       try {
         await uploadBytes(storageRef, photo);
         photoURL = await getDownloadURL(storageRef);
@@ -54,17 +62,25 @@ const TripForm = () => {
       emails: [...new Set([auth.currentUser.email, ...travellers])],
       photoURL,
       createdBy: auth.currentUser.uid,
+      year: knowsDates ? getYear(departureDate) : 'notset'
     };
 
     try {
       await createTrip(tripData);
       console.log('Trip created successfully');
       clearForm();
+      navigate('/trips');
     } catch (error) {
       console.error('Error creating trip:', error);
       // Handle error scenario if needed
     }
   };
+
+  const getYear = (departureDate) => {
+    const dateObj = new Date(departureDate);
+    const year = dateObj.getFullYear();
+    return year;
+  }
 
   const clearForm = () => {
     setTitle('');

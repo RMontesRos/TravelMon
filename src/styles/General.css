@@ -1,0 +1,53 @@
+/* BUTTON */
+button {
+    color: #fff;
+    background-color: #926EB8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #58258E;
+    }
+}
+
+/* NAVIGATION BAR: TRIPS (years), TRIP (days), ... */
+.nav-container {
+    .nav-bar {
+        display: flex;
+        border-bottom: 1px solid #cedde8;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .nav-item {
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: #808f9b;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        letter-spacing: 0.015em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav-item.active {
+        border-bottom: 3px solid #926EB8;
+        color: #000000;
+    }
+
+    .nav-item.active p {
+        color: #000000;
+    }
+
+    .nav-item p {
+        margin: 0;
+    }
+}
+
+/* */

@@ -42,11 +42,11 @@ header {
 }
 
 .travel {
-    color: #926EB8;
+    color: #58258E;
 }
 
 .mon {
-    color: #B29BD1;
+    color: #926EB8;
 }
 
 .travel .initial,
@@ -69,22 +69,14 @@ header {
     margin-right: 20px;
 }
 
-.nav-links a,
-.nav-links button {
+.nav-links a {
     text-decoration: none;
     background: none;
     border: none;
     cursor: pointer;
     color: #000;
     white-space: nowrap;
-}
-
-.nav-links a {
     font-size: 16px;
-}
-
-.nav-links button {
-    border-radius: 12px;
 }
 
 .account-buttons {
@@ -92,28 +84,18 @@ header {
     gap: 10px;
 }
 
-.nav-links .btn-gray {
-    background-color: #ccc;
-    color: #333;
+.nav-links .account-buttons button {
     padding: 8px 12px;
     font-size: 16px;
     transition: background-color 0.3s;
-}
-
-.nav-links .btn-gray:hover {
-    background-color: #aeaeae;
-}
-
-.nav-links .btn-blue {
-    background-color: #000000;
-    color: #fff;
-    padding: 8px 12px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.nav-links .btn-blue:hover {
-    background-color: #696969;
+    &.btn-gray {
+        background-color: #ccc;
+        color: #000;
+        
+        &:hover {
+            background-color: #AAAAD4;
+        }
+    }
 }
 
 .nav-icon {
@@ -136,20 +118,24 @@ header {
     border-radius: 4px;
 }
 
-.language-btn {
+.btn-dropdown {
     display: block;
     background: none;
-    border: none;
-    cursor: pointer;
     padding: 4px 8px;
-    font-size: 14px;
+    font-size: 13px;
+    color: #000;
     text-align: left;
+    white-space: nowrap;
     width: 100%;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: #AAAAD4;
+    }
+    &.active {
+        font-weight: bold;
+    }
 }
 
-.language-btn.active {
-    font-weight: bold;
-}
 
 .profile-menu-trigger {
     position: relative;
@@ -169,14 +155,15 @@ header {
 
 .nav-link.btn-logout {
     background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
     padding: 4px 8px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
     width: 100%;
+    color: #000;
     transition: background-color 0.3s;
+    &:hover {
+        background-color: #AAAAD4;
+    }
 }
 
 .nav-link.btn-logout:hover {

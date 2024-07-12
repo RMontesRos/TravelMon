@@ -8,6 +8,7 @@ import Home from './pages/HomePage';
 import Explore from './pages/ExplorePage';
 import Account from './pages/AccountPage';
 import LoginSignup from './pages/LoginSignupPage';
+import { CategoryProvider } from './components/contexts/CategoryContext';
 import './App.css';
 
 function App() {
@@ -27,15 +28,17 @@ function App() {
 
   return (
     <Router>
-      <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/login" element={<LoginSignup form="login" />} />
-        <Route path="/signup" element={<LoginSignup form="signup" />} />
-      </Routes>
+      <CategoryProvider> 
+        <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/login" element={<LoginSignup form="login" />} />
+          <Route path="/signup" element={<LoginSignup form="signup" />} />
+        </Routes>
+      </CategoryProvider>
     </Router>
   );
 }

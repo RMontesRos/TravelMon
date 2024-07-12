@@ -1,0 +1,129 @@
+ .forms {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    form label {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form input:focus,
+    form textarea:focus,
+    form select:focus {
+        border-color: #000;
+        outline: none;
+    }
+
+    form button {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+        background-color: #696969;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+        cursor: default;
+    }
+
+    /* Additional styles for specific form elements */
+    form .date-inputs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    form .date-inputs label {
+        text-align: center;
+    }
+
+    form .date-inputs input[type="date"] {
+        padding: 10px;
+        text-align: center;
+    }
+
+    form .travellers-list {
+        margin-top: 16px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form .travellers-list label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    form .travellers-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    form .travellers-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    form .travellers-list li span {
+        margin-right: 8px;
+    }
+
+    form .travellers-list button {
+        background-color: transparent;
+        border: none;
+        color: red;
+        font-size: 18px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    form .travellers-list button:hover {
+        color: darkred;
+    }
+}

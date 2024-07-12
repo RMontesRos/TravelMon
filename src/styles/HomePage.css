@@ -67,8 +67,7 @@
 
 .feature-item {
     text-align: left;
-    cursor: pointer;
-    position: relative; /* Ensure relative positioning for nested elements */
+    position: relative;
 
     p {
         margin: 5px 0px;

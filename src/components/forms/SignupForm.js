@@ -1,10 +1,9 @@
 // SignupForm.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth, db } from '../../firebaseConfig';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { setDoc, doc } from 'firebase/firestore';
+import { auth } from '../../firebaseConfig';
 import { useTranslation } from 'react-i18next';
+import UserModel, { registerUser } from '../models/userModel';
 
 const SignupForm = () => {
     const { t } = useTranslation();
@@ -19,15 +18,14 @@ const SignupForm = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-
-            const user = userCredential.user;
-            await setDoc(doc(db, "users", user.uid), {
+            const userData = {
+                ...UserModel,
+                email: email,
                 firstName: firstName,
                 lastName: lastName,
-                username: username,
-                email: email,
-            });
+                username: username
+            };
+            await registerUser(auth, email, password, userData);
             navigate('/trips');
         } catch (error) {
             if (error.code === 'auth/email-already-in-use') {

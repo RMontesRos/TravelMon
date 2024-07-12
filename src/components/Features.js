@@ -18,18 +18,13 @@ function Features() {
         { title: t('travel-tips'), description: t('travel-tips-text'), image: tips }
     ];
 
-    const handleFeatureClick = (title) => {
-        // Define action on feature click here
-        console.log(`${title} clicked`);
-    };
-
     return (
         <section className="features">
             <h2>{t('title-home')}</h2>
             <p>{t('description-home')}</p>
             <div className="features-list">
                 {features.map((feature, index) => (
-                    <div key={index} className="feature-item" onClick={() => handleFeatureClick(feature.title)}>
+                    <div key={index} className="feature-item">
                     <img src={feature.image} alt={feature.title} className="feature-image" />
                         <p>{feature.title}</p>
                         <p className="feature-description">{feature.description}</p>

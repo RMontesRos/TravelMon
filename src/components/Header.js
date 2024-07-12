@@ -84,15 +84,15 @@ const Header = ({ isLoggedIn }) => {
               {t('profile')}
               {showProfileMenu && (
                 <div className="profile-menu">
-                  <button className="nav-link btn-logout" onClick={handleLogoutClick}>{t('log-out')}</button>
+                  <button className="btn-dropdown" onClick={handleLogoutClick}>{t('log-out')}</button>
                 </div>
               )}
             </div>
           </>
         ) : (
           <div className="account-buttons">
-            <button className="nav-link btn-blue" onClick={handleLoginClick}>{t('log-in')}</button>
-            <button className="nav-link btn-gray" onClick={handleSignupClick}>{t('sign-up')}</button>
+            <button onClick={handleLoginClick}>{t('log-in')}</button>
+            <button className="btn-gray" onClick={handleSignupClick}>{t('sign-up')}</button>
           </div>
         )}
         <div className="language-selector" ref={languageMenuRef}>
@@ -105,13 +105,13 @@ const Header = ({ isLoggedIn }) => {
           {showLanguageMenu && (
             <div className="language-menu">
               <button
-                className={`language-btn ${i18n.language === 'en' ? 'active' : ''}`}
+                className={`btn-dropdown ${i18n.language === 'en' ? 'active' : ''}`}
                 onClick={() => changeLanguage('en')}
               >
                 {t('english')}
               </button>
               <button
-                className={`language-btn ${i18n.language === 'es' ? 'active' : ''}`}
+                className={`btn-dropdown ${i18n.language === 'es' ? 'active' : ''}`}
                 onClick={() => changeLanguage('es')}
               >
                 {t('spanish')}

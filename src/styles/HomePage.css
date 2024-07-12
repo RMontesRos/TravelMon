@@ -41,17 +41,8 @@
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    background-color: #000000;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    border-radius: 8px;
     font-size: 16px;
-    cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: #696969;
 }
 
 .features {
@@ -100,15 +91,7 @@
 
 .cta button {
     padding: 10px 20px;
-    border-radius: 12px;
-    background-color: #000000;
-    color: #fff;
     font-size: 14px;
-    border: none;
     height: fit-content;
     align-self: center;
-    cursor: pointer;
-    &:hover {
-        background-color: #696969;
-    }
 }

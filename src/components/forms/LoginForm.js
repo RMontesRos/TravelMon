@@ -37,7 +37,7 @@ const LoginForm = () => {
     };
 
     return (
-        <div className='full-content loginsignup'>
+        <>
             <form id='login-form' onSubmit={handleLogin}>
                 <h2>{t('log-in')}</h2>
                 <label htmlFor="login-email">{t('email')}</label>
@@ -60,7 +60,7 @@ const LoginForm = () => {
                 <button type="submit">{t('log-in')}</button>
                 <p className="changeForm" onClick={handleSignupRedirect}>{t('want-sign-up')}</p>
             </form>
-        </div>
+        </>
     );
 };
 

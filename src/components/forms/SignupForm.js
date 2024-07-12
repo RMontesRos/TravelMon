@@ -43,7 +43,7 @@ const SignupForm = () => {
     };
 
     return (
-        <div className='full-content loginsignup'>
+        <>
             <h1>{t('join-travelmon')}</h1>
             <p className="changeForm" onClick={handleLoginRedirect}>{t('want-log-in')}</p>
             <form id='register-form' onSubmit={handleRegister}>
@@ -93,7 +93,7 @@ const SignupForm = () => {
                 {error && <p className="error-message">{error}</p>}
                 <button type="submit">{t('you-sign-up')}</button>
             </form>
-        </div>
+        </>
     );
 };
 

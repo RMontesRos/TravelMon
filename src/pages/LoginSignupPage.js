@@ -6,7 +6,7 @@ import '../styles/LoginSignupPage.css';
 
 const LoginSignup = ({ form }) => {
   return (
-    <div className='full-content'>
+    <div className='full-content loginsignup'>
       {form === "login" ?
         <LoginForm /> :
         <SignupForm />

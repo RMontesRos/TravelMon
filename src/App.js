@@ -8,6 +8,7 @@ import Home from './pages/HomePage';
 import Explore from './pages/ExplorePage';
 import Account from './pages/AccountPage';
 import LoginSignup from './pages/LoginSignupPage';
+import './App.css';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

@@ -1,10 +1,11 @@
 {
   "short_name": "TravelMon",
-  "name": "TravelMon",
+  "name": "Web site for travel enthusiasts",
   "icons": [
     {
       "src": "logo.png",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",

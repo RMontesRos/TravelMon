@@ -38,7 +38,7 @@ const LoginForm = () => {
 
     return (
         <>
-            <form id='login-form' onSubmit={handleLogin}>
+            <form className="form" id='login-form' onSubmit={handleLogin}>
                 <h2>{t('log-in')}</h2>
                 <label htmlFor="login-email">{t('email')}</label>
                 <input

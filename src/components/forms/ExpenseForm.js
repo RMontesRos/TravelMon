@@ -47,7 +47,7 @@ const ExpenseForm = ({ budgetId }) => {
     return (
         <div>
             <h1>ExpenseForm</h1>
-            <form id='expense-form' onSubmit={handleAdd}>
+            <form className="form" id='expense-form' onSubmit={handleAdd}>
                 <label>
                     Trip Day (optional):
                     <input

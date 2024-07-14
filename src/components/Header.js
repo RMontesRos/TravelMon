@@ -59,7 +59,7 @@ const Header = ({ isLoggedIn }) => {
 
   return (
     <header>
-      <Link to={isLoggedIn ? '/trips' : '/home'} className="logo-link">
+      <Link to="/home" className="logo-link">
         <div className="logo">
           <img src={logo} alt="logo-travelmon" />
           <div className="travelmon">

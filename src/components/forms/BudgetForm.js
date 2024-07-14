@@ -47,7 +47,7 @@ const BudgetForm = ({ tripId }) => {
     return (
         <div>
             <h1>BudgetForm</h1>
-            <form id='budget-form' onSubmit={handleAdd}>
+            <form className="form" id='budget-form' onSubmit={handleAdd}>
                 <p>Travel ID: {tripId}</p>
                 <h2>Categories</h2>
                 {budgetCategories.map((category, index) => (

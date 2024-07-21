@@ -53,7 +53,7 @@ const CategoryForm = () => {
             </li>
         ))}
         </ul>
-      <form onSubmit={handleSubmit}>
+      <form className="form" id="category-form" onSubmit={handleSubmit}>
         <input
           type="text"
           value={name}

@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SearchIcon from '../assets/icons/search.png';
 
-function SearchBar({ withImage }) {
+function SearchBar({ imageUrl, withImage }) {
     const { t } = useTranslation();
 
     const handleSearch = () => {
@@ -12,10 +12,10 @@ function SearchBar({ withImage }) {
     };
 
     return (
-        <div className="searchbar">
+        <div className="searchbar" style={{ backgroundImage: `url(${imageUrl})` }}>
             {withImage &&
                 <>
-                    <h1>{t('serach-title')}</h1>
+                    <h1>{t('search-title')}</h1>
                     <p>{t('search-text')}</p>
                 </>
             }

@@ -3,6 +3,7 @@
         font-size: 14px;
         text-align: center;
         margin-top: 10px;
+
         &.changeForm {
             cursor: pointer;
         }
@@ -14,77 +15,82 @@
         margin-bottom: 20px;
         text-align: center;
     }
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    &#register-form {
-        margin-top: 50px;
+    form {
+        display: flex;
+        flex-direction: column;
+
+        &#register-form {
+            margin-top: 50px;
+        }
     }
-}
 
-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
+    form h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-form label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #333;
-}
+    form label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #333;
+    }
 
-form input {
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fafafa;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-}
+    form input {
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fafafa;
+        box-sizing: border-box;
+        /* Ensure padding and border are included in the element's total width and height */
+    }
 
-form input:focus {
-    border-color: #000000;
-    outline: none;
-    background-color: #fff;
-}
+    form input:focus {
+        border-color: #000000;
+        outline: none;
+        background-color: #fff;
+    }
 
-form button {
-    margin: 20px 0px;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-}
+    form button {
+        margin: 20px 0px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+    }
 
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-align: center;
-    cursor: default;
-}
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+        cursor: default;
+    }
 
-/* New styles for name fields */
-.name-container {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    width: 100%;
-}
+    /* New styles for name fields */
+    .name-container {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        width: 100%;
+    }
 
-.name-field {
-    display: flex;
-    flex-direction: column;
-}
+    .name-field {
+        display: flex;
+        flex-direction: column;
+    }
 
-.name-field input {
-    width: 100%; /* Ensure the input takes the full width of its container */
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-}
+    .name-field input {
+        width: 100%;
+        /* Ensure the input takes the full width of its container */
+        box-sizing: border-box;
+        /* Ensure padding and border are included in the element's total width and height */
+    }
 
-.name-field label {
-    display: block;
+    .name-field label {
+        display: block;
+    }
+
 }
